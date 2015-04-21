@@ -7,7 +7,7 @@
     <groupId>cn.com.starit.xlab</groupId>
     <artifactId>gs_demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <properties></properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -32,4 +32,26 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>1.2.3.RELEASE</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <mainClass>cn.com.starit.xlab.test.Application</mainClass>
+            </configuration>
+        </plugin>
+
+    </plugins>
+
+    </build>
+
 </project>
