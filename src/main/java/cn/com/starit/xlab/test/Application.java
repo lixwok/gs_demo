@@ -1,7 +1,4 @@
 package cn.com.starit.xlab.test;
-<<<<<<< Updated upstream
-
-=======
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.ParseException;
@@ -14,14 +11,10 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
->>>>>>> Stashed changes
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-<<<<<<< Updated upstream
-=======
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -29,24 +22,18 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
->>>>>>> Stashed changes
 
 /**
  * Created by Administrator on 2015/4/22.
  */
 @Configuration
 @ComponentScan
-<<<<<<< Updated upstream
 @EnableAutoConfiguration
-public class Application {
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class);
-=======
-@Controller
-@EnableAutoConfiguration
+
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class,args);
+
     }
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String hello(){
@@ -137,6 +124,5 @@ public class Application {
                 e.printStackTrace();
             }
         }
->>>>>>> Stashed changes
     }
 }
